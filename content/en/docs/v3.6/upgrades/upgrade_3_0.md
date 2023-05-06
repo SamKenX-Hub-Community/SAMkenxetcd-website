@@ -44,7 +44,7 @@ Please [backup the data directory](/docs/v2.3/admin_guide#backing-up-the-datasto
 
 ### Upgrade procedure
 
-This example details the upgrade of a three-member v2.3 ectd cluster running on a local machine.
+This example details the upgrade of a three-member v2.3 etcd cluster running on a local machine.
 
 #### 1. Check upgrade requirements.
 
@@ -124,7 +124,7 @@ $ ETCDCTL_API=3 etcdctl endpoint health
 
 ## Further considerations
 
-- etcdctl environment variables have been updated. If `ETCDCTL_API=2 etcdctl cluster-health` works properly but `ETCDCTL_API=3 etcdctl endpoints health` responds with `Error:  grpc: timed out when dialing`, be sure to use the [new variable names](https://github.com/etcd-io/etcd/tree/master/etcdctl#etcdctl).
+- etcdctl environment variables have been updated. If `ETCDCTL_API=2 etcdctl cluster-health` works properly but `ETCDCTL_API=3 etcdctl endpoints health` responds with `Error:  grpc: timed out when dialing`, be sure to use the [new variable names](https://github.com/etcd-io/etcd/tree/main/etcdctl#etcdctl).
 
 ## Known Issues
 
